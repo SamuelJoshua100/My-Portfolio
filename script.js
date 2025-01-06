@@ -55,3 +55,41 @@ sr.reveal(".work__img", { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal(".contact__input", { interval: 200 });
+
+//FORM VALIDATIION
+// Select the form and response message elements
+const contactForm = document.getElementById("contactForm");
+const formResponse = document.getElementById("formResponse");
+
+// Add an event listener to the form for the "submit" event
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission behavior
+
+  // Display a "Sending..." message to the user
+  formResponse.style.display = "block";
+  formResponse.textContent = "Sending...";
+
+  // Create a FormData object from the form
+  const formData = new FormData(contactForm);
+
+  // Send the form data to Formspree using Fetch API
+  fetch("https://formspree.io/f/xannlpgr", {
+    method: "POST",
+    body: formData, // Send the FormData directly without converting to JSON
+  })
+    .then((response) => {
+      if (response.ok) {
+        // If the submission is successful, show a success message
+        formResponse.textContent = "Message sent successfully!";
+        contactForm.reset(); // Clear the form fields
+      } else {
+        // If there is an error, show an error message
+        formResponse.textContent = "Something went wrong. Please try again.";
+      }
+    })
+    .catch((error) => {
+      // Handle network or other errors
+      formResponse.textContent =
+        "Error: Unable to send your message. Please try again.";
+    });
+});
