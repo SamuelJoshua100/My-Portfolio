@@ -252,11 +252,12 @@ img {
 
 /*SKILLS CONTAINER*/
 .skills__container {
-  row-gap: 2rem;
+  column-gap: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
@@ -266,6 +267,7 @@ img {
 }
 .skills__data {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -294,6 +296,9 @@ img {
 }
 .skills__icon.figma {
   color: purple;
+}
+.skills__icon.git {
+  color: orange;
 }
 .skills__names {
   display: flex;
@@ -329,8 +334,12 @@ img {
   background-color: aqua;
 }
 .skills__figma {
-  width: 50%;
+  width: 60%;
   background-color: purple;
+}
+.skills__git {
+  width: 80%;
+  background-color: orange;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -397,6 +406,9 @@ textarea {
   font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2);
+}
+.footer__icon:hover {
+  transform: scale(1.1);
 }
 
 /*MEDIA QUERIES FOR RESPONSIVENESS*/
