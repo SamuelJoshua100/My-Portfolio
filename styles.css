@@ -290,7 +290,7 @@ img {
   color: #4678ff;
 }
 .skills__icon.js {
-  color: rgb(232, 232, 0);
+  color: rgb(255, 232, 61);
 }
 .skills__icon.tailwind {
   color: rgb(0, 191, 191);
@@ -298,17 +298,20 @@ img {
 .skills__icon.figma {
   color: purple;
 }
+.skills__icon.react {
+  color: rgb(21, 0, 124);
+}
 .skills__icon.git {
   color: orange;
 }
 .skills__icon.nextjs {
-  color: rgb(14, 0, 93);
+  color: black;
 }
 .skills__icon.supa {
   color: rgb(0, 93, 51);
 }
 .skills__icon.typescript {
-  color: rgb(8, 0, 54);
+  color: rgb(42, 133, 230);
 }
 .skills__icon.npm {
   color: rgb(203, 0, 0);
@@ -337,11 +340,11 @@ img {
 }
 .skills__js {
   width: 78%;
-  background-color: rgb(232, 232, 0);
+  background-color: rgb(255, 232, 61);
 }
 .skills__react {
   width: 45%;
-  background-color: #0432ae;
+  background-color: rgb(21, 0, 124);
 }
 .skills__tailwind {
   width: 15%;
@@ -357,7 +360,7 @@ img {
 }
 .skills__nextjs {
   width: 10%;
-  background-color: rgb(14, 0, 93);
+  background-color: black;
 }
 .skills__supa {
   width: 5%;
@@ -365,7 +368,7 @@ img {
 }
 .skills__typescript {
   width: 10%;
-  background-color: rgb(8, 0, 54);
+  background-color: rgb(42, 133, 230);
 }
 .skills__npm {
   width: 85%;
