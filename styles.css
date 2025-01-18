@@ -316,7 +316,9 @@ img {
 .skills__icon.npm {
   color: rgb(203, 0, 0);
 }
-
+.skills__icon.vercel {
+  color: black;
+}
 .skills__names {
   display: flex;
   align-items: center;
@@ -373,6 +375,10 @@ img {
 .skills__npm {
   width: 75%;
   background-color: rgb(203, 0, 0);
+}
+.skills__vercel {
+  width: 50%;
+  background-color: black;
 }
 .skills__img {
   border-radius: 0.5rem;
