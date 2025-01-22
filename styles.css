@@ -348,11 +348,11 @@ img {
   background-color: rgb(255, 232, 61);
 }
 .skills__react {
-  width: 75%;
+  width: 50%;
   background-color: rgb(21, 0, 124);
 }
 .skills__tailwind {
-  width: 0.5%;
+  width: 15%;
   background-color: rgb(0, 191, 191);
 }
 .skills__figma {
@@ -433,13 +433,21 @@ img {
 textarea {
   resize: none;
 }
+textarea::placeholder {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+
+  border-radius: 0.5rem;
+
+  outline: none;
+}
 /*FOOTER SECTION*/
 .footer {
   background-color: var(--second-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .footer__title {
   font-size: 2rem;
