@@ -8,7 +8,7 @@
 
 /*COLOURS*/
 :root {
-  --first-color: rgb(64, 112, 244);
+  --first-color: #4070f4;
   --second-color: #0e2431;
 }
 /*TYPOGRAPHY*/
@@ -21,7 +21,7 @@
 @media screen and (min-width: 768px) {
   :root {
     --big-font-size: 3.5rem;
-    --h2-font-size: 3rem;
+    --h2-font-size: 2rem;
     --normal-font-size: 1rem;
   }
 }
@@ -31,7 +31,7 @@
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
-  --mb-4: 3rem;
+  --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 }
@@ -94,7 +94,6 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  margin-bottom: var(--mb-2);
   top: 2rem;
   background-color: var(--first-color);
 }
